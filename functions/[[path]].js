@@ -4,7 +4,7 @@ export async function onRequest(context) {
   const videoId = url.pathname.replace("/", "").trim()
 
   const ogImage = videoId
-    ? `https://res.cloudinary.com/bhguniversalstudio/image/fetch/c_fill,g_center,w_1280,h_720/l_play_i3pryq,g_center,w_220,fl_layer_apply/f_jpg,q_auto/https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+    ? `https://res.cloudinary.com/bhguniversalstudio/image/fetch/c_fill,g_center,w_1280,h_720/l_play_i3pryq,g_center,w_220,fl_layer_apply/f_jpg,q_auto/https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
     : "https://share-gurbani-kirtan-darbar.pages.dev/logo.png"
 
   const asset = await context.env.ASSETS.fetch(
