@@ -23,7 +23,7 @@ export async function onRequest(context) {
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Gurbani Kirtan Darbar" />
 <meta property="og:title" content="New Gurbani Shabad & Soulful Kirtan" />
-<meta property="og:description" content="Listen to newly added Gurbani Shabads, full-length Kirtan, Naam Simran, and live recordings from Sri Guru Granth Sahib Ji. Experience peace, devotion, and divine wisdom." />
+<meta property="og:description" content="Listen to newly added Gurbani Shabads, full-length Kirtan, Naam Simran, and live gurbani streams. Experience peace, devotion, and divine wisdom." />
 
 <meta property="og:image" content="${ogImage}" />
 <meta property="og:image:width" content="1280" />
