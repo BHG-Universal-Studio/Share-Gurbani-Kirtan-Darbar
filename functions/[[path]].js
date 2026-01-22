@@ -6,7 +6,7 @@ export async function onRequest(context) {
 
   // ✅ Cloudinary 16:9 OG image with center play overlay
   const ogImage = videoId
-    ? `https://res.cloudinary.com/bhguniversalstudio/image/fetch/c_fill,g_center,w_1280,h_720/l_play_circle_bbmxz9,g_center,w_220,fl_layer_apply/f_jpg,q_auto/https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+    ? `https://res.cloudinary.com/bhguniversalstudio/image/fetch/c_fill,g_center,w_1280,h_720/l_Untitled_design_utddwl,g_center,w_220,fl_layer_apply/f_jpg,q_auto/https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
     : "https://share-gurbani-kirtan-darbar.pages.dev/logo.png";
 
   // Fetch real index.html from Pages
