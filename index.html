@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gurbani Kirtan Darbar</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Watch and listen to full-length Gurbani Kirtan, Shabad Gurbani, Naam Simran and live spiritual videos — Gurbani Kirtan Darbar"
+  />
+
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+
+<section class="video-container">
+  <div id="thumbnail" class="thumbnail"></div>
+
+  <iframe
+    id="player"
+    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+
+  <button id="muteBtn" class="mute-btn">
+    <img src="/mute.png" alt="Unmute" />
+  </button>
+
+  <button id="downloadBtn" class="download-btn">
+    <img src="/download.png" alt="Download" />
+  </button>
+
+  <div class="loader" id="loader"></div>
+</section>
+
+<div class="below-video-badge">
+  <span>🎵 Live & Recorded Gurbani Kirtan</span>
+</div>
+
+<div class="scroll-hint">
+  Scroll down to explore more ↓
+</div>
+
+<section class="details">
+
+  <h1>Gurbani Kirtan Darbar</h1>
+
+  <p class="subtitle">
+    Shabad Gurbani • Full Kirtan Videos • Naam Simran • Sikh Spirituality
+  </p>
+
+  <p class="desc">
+    <strong>Gurbani Kirtan Darbar</strong> is a Sikh spiritual platform where you can
+    watch and listen to
+    <strong>full-length Gurbani Kirtan, Shabad Gurbani, Naam Simran, and Katha</strong>
+    with peace, devotion, and clarity.
+  </p>
+
+  <p class="desc">
+    Experience the divine wisdom of
+    <strong>Sri Guru Granth Sahib Ji</strong> through
+    <strong>authentic Kirtan, Shabad Vani, and live recordings</strong>,
+    beautifully presented for deep listening and meditation.
+  </p>
+
+  <div class="features">
+    <div>🎶 Full-Length Gurbani Kirtan</div>
+    <div>📿 Shabad Gurbani & Naam Simran</div>
+    <div>📡 Live Kirtan Streams</div>
+    <div>🎶 Live Gurbani Kirtan 24/7</div>
+  </div>
+
+  <div class="cta">
+    <button class="primary app-open-btn" onclick="openInApp()">
+      <img src="logo.png" alt="Gurbani Kirtan Darbar" />
+      <span>Open in Gurbani App</span>
+    </button>
+
+    <a
+      class="playstore"
+      href="https://play.google.com/store/apps/details?id=com.BHG.gurbani"
+      target="_blank"
+    >
+      <img
+        src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+        alt="Get it on Google Play"
+      />
+    </a>
+  </div>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

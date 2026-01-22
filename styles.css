@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 🎥 LANDSCAPE VIDEO (16:9) — ONLY CHANGE */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 860px;          /* wider for landscape */
+  aspect-ratio: 16 / 9;      /* ✅ FIXED 16:9 */
+  margin: 16px auto 0;
+  background: #000;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.thumbnail {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.loader {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fix primary button layout */
+.app-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 260px;
+}
+
+/* Fix logo inside primary button */
+/* Dark background behind Khanda icon */
+.app-open-btn img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+
+  background: rgba(0, 0, 0, 0.637);   /* 🔥 dark contrast */
+  border-radius: 50%;
+           padding: 3px;          
+}
+
+
+/* Text alignment */
+.app-open-btn span {
+  line-height: 1;
+  white-space: nowrap;
+}
+
+
+.loader::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ================= OLD DESIGN BELOW (UNCHANGED) ================= */
+
+.details {
+  padding: 24px 20px;
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.details h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #f5b301;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  opacity: 0.75;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.desc {
+  margin-top: 14px;
+  line-height: 1.7;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.features {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  justify-content: center;
+}
+
+.features div {
+  background: #1f1f1f;
+  padding: 14px 10px;
+  border-radius: 14px;
+  font-size: 14px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.below-video-badge {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.below-video-badge span {
+  background: linear-gradient(135deg, #ff9f00, #ff6a00);
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  white-space: nowrap;
+}
+
+.scroll-hint {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f5b301;
+  animation: bounce 1.6s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* Buttons */
+/* Buttons – fixed vertical stack (no overlap) */
+.mute-btn,
+.download-btn {
+  position: absolute;
+  right: 14px;
+  z-index: 6;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+}
+
+/* 🔊 Mute button (top) */
+/* 🔊 Mute button (top) */
+.mute-btn {
+  top: 45%;                     /* ⬆️ move up slightly */
+  transform: translateY(-100%);
+}
+
+/* ⬇️ Download button (below mute, safe zone) */
+.download-btn {
+  top: calc(45% + 13px);        /* ⬆️ keeps distance from YouTube logo */
+}
+
+
+
+.mute-btn img,
+.download-btn img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* CTA */
+.cta {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+/* ✅ OLD PRIMARY BUTTON (UNCHANGED) */
+.primary {
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f5b301, #ff9800);
+  color: #000;
+  cursor: pointer;
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(160,118,8,0.5); }
+  70% { box-shadow: 0 0 0 12px rgba(160,118,8,0); }
+  100% { box-shadow: 0 0 0 0 rgba(160,118,8,0); }
+}
+
+.playstore img {
+  width: 200px;
+}
