@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.BHG.gurbani",
+      "sha256_cert_fingerprints": [
+        "6F:2D:D2:A5:CA:0F:44:D0:19:4D:CB:B0:F3:63:56:E5:E6:BE:E1:1E:8D:BF:E4:3B:D4:E3:8C:20:CB:2D:01:1B"
+      ]
+    }
+  }
+]
